@@ -49,6 +49,20 @@ a {
 
 /* -----------Базові стилі-----------*/
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .button-primary {
   color: var(--main-withe-color);
   background-color: var(--accent-color);
@@ -81,7 +95,7 @@ a {
   gap: var(--indent);
 }
 
-.card-set-items {
+.card-set__items {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
@@ -314,47 +328,18 @@ p {
   transition: background-color var(--timing-function);
 }
 
-.button.primary:hover,
-.button.primary:focus {
+.hero__button-primary:hover,
+.hero__button-primary:focus {
   background-color: #188ce8;
 }
 
 /* Advantages */
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.advantages-list {
+.advantages__list {
   --items: 4;
 }
 
-.advantages-title {
-  color: var(--secondly-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-
-  margin-bottom: 10px;
-}
-
-.advantages-text {
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-.advantages-thumb {
+.advantages__thumb {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -367,9 +352,24 @@ p {
   border-radius: 4px;
 }
 
-.advantages-icon {
+.advantages__icon {
   width: 70px;
   height: 70px;
+}
+
+.advantages__title {
+  color: var(--secondly-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.advantages__text {
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /* Ourwork */
