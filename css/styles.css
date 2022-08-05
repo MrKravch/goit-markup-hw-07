@@ -47,6 +47,23 @@ a {
   display: block;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
 /* -----------Базові стилі-----------*/
 
 .visually-hidden {
@@ -147,23 +164,6 @@ a {
 
   /* outline: 2px solid red; */
   outline-offset: -2px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  padding: 0;
-  margin: 0;
 }
 
 /* --------CSS для головної сторінки (index.html)-------- */
@@ -378,16 +378,16 @@ p {
   padding-top: 0;
 }
 
-.ourwork-list {
+.ourwork__list {
   display: flex;
   gap: var(--indent);
 }
 
-.ourwork-item {
+.ourwork__item {
   position: relative;
 }
 
-.ourwork-overlay {
+.ourwork__overlay {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -398,7 +398,7 @@ p {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.ourwork-overlay-text {
+.ourwork__text {
   font-family: var(--main-font);
   color: #ffffff;
   text-align: center;
