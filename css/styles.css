@@ -18,6 +18,7 @@
   --main-font: Roboto, sans-serif;
   --secondary-font: "Raleway";
   /* Colors */
+  --black-color: #000000;
   --accent-color: #2196f3;
   --secondary-white-color: #f5f4fa;
   --main-withe-color: #ffffff;
@@ -53,7 +54,7 @@ img {
 
 /* -----------Базові стилі-----------*/
 
-.link {
+a {
   text-decoration: none;
   display: block;
 }
@@ -146,14 +147,15 @@ p {
 }
 
 .logo {
-  color: #000000;
+  color: var(--black-color);
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-decoration: none;
+}
 
+.logo--left-position {
   margin-right: 93px;
 }
 
@@ -164,7 +166,7 @@ p {
   color: var(--accent-color);
 }
 
-.site-nav {
+.site-nav--offset {
   margin-right: auto;
 }
 
