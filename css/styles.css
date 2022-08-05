@@ -123,7 +123,7 @@ p {
   gap: 10px;
 }
 
-.socials-link {
+.socials-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,13 +138,13 @@ p {
     background-color var(--timing-function);
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.socials-list__link:hover,
+.socials-list__link:focus {
   color: #ffffff;
   background-color: var(--accent-color);
 }
 
-.social-icon {
+.socials-list__icon {
   fill: currentColor;
 }
 
@@ -357,7 +357,7 @@ p {
   height: 70px;
 }
 
-.advantages__title {
+.advantages__subtitle {
   color: var(--secondly-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -416,7 +416,11 @@ p {
   background-color: var(--secondary-white-color);
 }
 
-.ourteam-item {
+.ourteam__list {
+  --items: 4;
+}
+
+.ourteam__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
@@ -425,16 +429,12 @@ p {
   background-color: #ffffff;
 }
 
-.ourteam-wrapper {
+.ourteam__wrapper {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.ourteam-list {
-  --items: 4;
-}
-
-.ourteam-title {
+.ourteam__subtitle {
   color: var(--secondly-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -444,7 +444,7 @@ p {
   margin-bottom: 10px;
 }
 
-.ourteam-text {
+.ourteam__text {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -553,7 +553,7 @@ p {
   margin-right: 93px;
 }
 
-.footer-social-box .socials-link {
+.footer-social-box .socials-list__link {
   color: var(--main-withe-color);
   background-color: rgba(255, 255, 255, 0.1);
 
@@ -561,8 +561,8 @@ p {
     background-color var(--timing-function);
 }
 
-.footer-social-box .socials-link:hover,
-.footer-social-box .socials-link:focus {
+.footer-social-box .socials-list__link:hover,
+.footer-social-box .socials-list__link:focus {
   background-color: var(--accent-color);
   color: var(--main-withe-color);
 }
