@@ -139,24 +139,10 @@ p {
 
 /* Header */
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
-}
-
-.header-nav {
-  margin-right: auto;
-}
-
-.header-list {
-  display: flex;
-  gap: 50px;
-}
-
-.header-container .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .logo {
@@ -174,11 +160,23 @@ p {
 .logo:focus {
   color: var(--accent-color);
 }
-.logo-accent {
+.logo--accent {
   color: var(--accent-color);
 }
 
-.header-list .link {
+.site-nav {
+  margin-right: auto;
+}
+
+.site-nav__list {
+  display: flex;
+  gap: 50px;
+}
+
+.site-nav__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--secondly-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -186,12 +184,13 @@ p {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.link.current {
+
+.site-nav__link--current {
   position: relative;
   color: var(--accent-color);
 }
 
-.current::after {
+.site-nav__link--current::after {
   content: "";
 
   position: absolute;
@@ -205,35 +204,49 @@ p {
   border-radius: 2px;
 }
 
-.header-list .header-contact {
-  color: var(--main-text-color);
+.contacts {
+  display: flex;
+  gap: 50px;
 }
 
-.header .link {
-  transition: color var(--timing-function);
-}
-
-.header .link:hover,
-.header .link:focus {
-  color: var(--accent-color);
-}
-
-.header-contact {
+.contacts__link {
   display: inline-flex;
   align-items: center;
   fill: currentColor;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
-.mail-icon {
+.contacts__icon--mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
 
-.smartphone-icon {
+.contacts__icon--smartphone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+}
+
+.site-nav__link,
+.contacts__link {
+  transition: color var(--timing-function);
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus,
+.contacts__link:hover,
+.contacts__link:focus {
+  color: var(--accent-color);
 }
 
 /* hero */
