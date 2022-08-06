@@ -68,7 +68,7 @@
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button
-            class="button-primary hero__button-primary"
+            class="button-primary hero-button"
             type="button"
             data-modal-open
           >
@@ -585,9 +585,9 @@
                 autocomplete="on"
               />
             </label>
-            <button class="button-primary subscription__btn" type="submit">
+            <button class="button-primary subscription-btn" type="submit">
               Підписатися
-              <svg class="subscription__btn-icon" width="24" height="24">
+              <svg class="subscription-btn__icon" width="24" height="24">
                 <use href="./images/icons.svg#footer-send"></use>
               </svg>
             </button>
@@ -596,84 +596,87 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="modal-btn" data-modal-close>
-          <svg class="modal-btn-icon" width="18" height="18">
+    <div class="backdrop backdrop--is-hidden backdrop--position" data-modal>
+      <div class="modal modal--position">
+        <button class="btn-close modal__btn-close--position" data-modal-close>
+          <svg class="btn-close__icon" width="18" height="18">
             <use href="./images/icons.svg#modal-close"></use>
           </svg>
         </button>
 
         <form class="registration-form">
-          <strong class="registration-form-title">
+          <strong class="registration-form__title">
             Залиште свої дані, ми вам передзвонимо
           </strong>
-          <div class="registration-form-group" role="group">
-            <label class="registration-form-thumb">
-              <span class="registration-form-label">Ім'я</span>
+          <div class="registration-form__group" role="group">
+            <label class="registration-form__thumb">
+              <span class="registration-form__label">Ім'я</span>
               <input
-                class="registration-form-input"
+                class="registration-form__input"
                 type="text"
                 name="user-name"
               />
-              <svg class="registration-form-icon" width="18" height="18">
+              <svg class="registration-form__icon" width="18" height="18">
                 <use href="./images/icons.svg#user-name"></use>
               </svg>
             </label>
-            <label class="registration-form-thumb">
-              <span class="registration-form-label">Телефон</span>
+            <label class="registration-form__thumb">
+              <span class="registration-form__label">Телефон</span>
               <input
-                class="registration-form-input"
+                class="registration-form__input"
                 type="tel"
                 name="user-tel"
               />
-              <svg class="registration-form-icon" width="18" height="18">
+              <svg class="registration-form__icon" width="18" height="18">
                 <use href="./images/icons.svg#user-phone"></use>
               </svg>
             </label>
-            <label class="registration-form-thumb">
-              <span class="registration-form-label">Пошта</span>
+            <label class="registration-form__thumb">
+              <span class="registration-form__label">Пошта</span>
               <input
-                class="registration-form-input"
+                class="registration-form__input"
                 type="email"
                 name="user-email"
                 autocomplete="on"
               />
-              <svg class="registration-form-icon" width="18" height="18">
+              <svg class="registration-form__icon" width="18" height="18">
                 <use href="./images/icons.svg#user-mail"></use>
               </svg>
             </label>
-            <label class="registration-form-thumb">
-              <span class="registration-form-label">Коментар</span>
+            <label class="registration-form__thumb">
+              <span class="registration-form__label">Коментар</span>
               <textarea
-                class="registration-form-comment"
+                class="registration-form__comment"
                 name="user-comment"
                 rows="7"
                 placeholder="Введіть текст"
               ></textarea>
             </label>
           </div>
-          <label class="registration-form-agreement">
+          <label class="checkbox-agreement checkbox-agreement--position">
             <input
-              class="registration-agreement-input visually-hidden"
+              class="checkbox-agreement__input visually-hidden"
               type="checkbox"
             />
-            <svg class="registration-agreement-icon" width="16" height="15">
+            <svg class="checkbox-agreement__icon" width="16" height="15">
               <use
-                class="registration-agreement-icon-unchecked"
+                class="checkbox-agreement__icon-unchecked"
                 href="./images/icons.svg#icon-unchecked"
               ></use>
               <use
-                class="registration-agreement-icon-checked"
+                class="checkbox-agreement__icon-checked"
                 href="./images/icons.svg#icon-checked"
               ></use>
             </svg>
-            <span class="registration-agreement-text">
+            <span class="checkbox-agreement__text">
               Погоджуюся з розсилкою та приймаю
-              <a href="" class="registration-agreement-link">Умови договору</a>
+              <a href="" class="checkbox-agreement__link">Умови договору</a>
             </span>
           </label>
-          <button class="button-primary registration-form-btn" type="submit">
+          <button
+            class="button-primary registration-form__button-primary"
+            type="submit"
+          >
             Відправити
           </button>
         </form>
