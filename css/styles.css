@@ -96,6 +96,37 @@ p {
   cursor: pointer;
 }
 
+/* кнопки фільтру "наші роботи" */
+
+.button-secondary {
+  color: var(--secondly-text-color);
+  background-color: var(--secondary-white-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+
+  padding: 6px 22px;
+
+  min-height: 38px;
+  border-radius: 4px;
+  border: transparent;
+
+  transition: color var(--timing-function),
+    background-color var(--timing-function), box-shadow var(--timing-function);
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  color: var(--main-withe-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .section-title {
   color: var(--secondly-text-color);
   font-weight: 700;
@@ -631,47 +662,71 @@ p {
 
 /* --------CSS для портфоліо(portfolio.html)-------- */
 
-/* кнопки фільтру "наші роботи" */
-
-.button.secondary {
-  color: var(--secondly-text-color);
-  background-color: var(--secondary-white-color);
-
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-
-  padding: 6px 22px;
-
-  min-height: 38px;
-  border-radius: 4px;
-  border: transparent;
-
-  transition: color var(--timing-function),
-    background-color var(--timing-function), box-shadow var(--timing-function);
-}
-
-.button.secondary:hover,
-.button.secondary:focus {
-  color: var(--main-withe-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 /*  наши работы */
 
 .examples-nav {
   display: flex;
-  grid-gap: 8px;
+  gap: 8px;
   justify-content: center;
+}
+
+.examples-nav--offset {
   margin-bottom: 50px;
 }
 
-.examples-title {
+.examples__link {
+  display: block;
+  text-decoration: none;
+  transition: box-shadow var(--timing-function);
+}
+
+.examples__link:hover,
+.examples__link:focus {
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
+}
+
+.examples__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  width: 370px;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transition: transform var(--timing-function);
+}
+
+.overlay--position {
+  position: absolute;
+}
+
+.overlay__text {
+  font-size: 18px;
+  line-height: 1.56;
+
+  padding: 63px 24px;
+
+  color: #ffffff;
+}
+
+.examples__link:hover .overlay--position,
+.examples__link:focus .overlay--position {
+  transform: translateY(-100%);
+}
+
+.examples__team-wrapper {
+  border: solid #eeeeee 1px;
+  border-top: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.examples__wrapper-title {
   color: var(--secondly-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -681,61 +736,11 @@ p {
   margin-bottom: 4px;
 }
 
-.examples-text {
+.examples__wrapper-text {
   color: var(--main-text-color);
 
   font-size: 16px;
   line-height: 1.87;
-}
-
-.examples-link {
-  display: block;
-  text-decoration: none;
-  transition: box-shadow var(--timing-function);
-}
-
-.examples-thumb {
-  position: relative;
-  overflow: hidden;
-}
-
-.examples-overlay {
-  position: absolute;
-
-  width: 370px;
-  height: 294px;
-  background-color: rgba(33, 150, 243, 0.9);
-
-  transition: transform var(--timing-function);
-}
-
-.examples-overlay-text {
-  font-size: 18px;
-  line-height: 1.56;
-
-  padding: 63px 24px;
-
-  color: #ffffff;
-}
-
-.examples-link:hover .examples-overlay,
-.examples-link:focus .examples-overlay {
-  transform: translateY(-100%);
-}
-
-.examples-link:hover,
-.examples-link:focus {
-  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
-    1px 4px 6px rgb(0 0 0 / 16%);
-}
-
-.team-wrapper {
-  border: solid #eeeeee 1px;
-  border-top: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 /* Modal window */
