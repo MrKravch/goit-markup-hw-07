@@ -1,8 +1,11 @@
-.advantages__list {
-    --items: 4;
-}
+.advantages {
+  @extend %section;
 
-.advantages__thumb {
+  &__list {
+    --items: 4;
+  }
+
+  &__thumb {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,14 +16,14 @@
 
     background-color: #f5f4fa;
     border-radius: 4px;
-}
+  }
 
-.advantages__icon {
+  &__icon {
     width: 70px;
     height: 70px;
-}
+  }
 
-.advantages__subtitle {
+  &__subtitle {
     color: var(--secondly-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -28,9 +31,10 @@
     text-transform: uppercase;
 
     margin-bottom: 10px;
-}
+  }
 
-.advantages__text {
+  &__text {
     font-size: 14px;
     line-height: 1.71;
+  }
 }

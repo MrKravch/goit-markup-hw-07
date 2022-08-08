@@ -1,27 +1,30 @@
 .hero {
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
+  @extend %section;
 
-    padding-top: 200px;
-    padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/hero.jpg);
+  padding-top: 200px;
+  padding-bottom: 200px;
 
-    background-color: #c4c4c4;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
 
-    text-align: center;
+  background-color: #c4c4c4;
 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+  text-align: center;
 
-.hero__title {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__title {
     width: 696px;
     color: var(--main-withe-color);
     font-weight: 900;
@@ -32,17 +35,18 @@
 
     margin: 0 auto;
     margin-bottom: 30px;
-}
+  }
 
-.hero-button {
+  &-button {
     min-width: 200px;
     min-height: 50px;
     padding: 10px 32px;
 
     transition: background-color var(--timing-function);
-}
+  }
 
-.hero-button:hover,
-.hero-button:focus {
+  &-button:hover,
+  &-button:focus {
     background-color: #188ce8;
+  }
 }

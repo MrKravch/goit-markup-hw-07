@@ -659,7 +659,7 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscription-btn {
+.subscription__button-primary {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -670,7 +670,7 @@ p {
   height: 50px;
 }
 
-.subscription-btn__icon {
+.subscription__btn-icon {
   fill: #ffffff;
 } */
 
@@ -962,7 +962,7 @@ p {
 }
 
 .checkbox-agreement__input:checked
-  + .registration-agreement-icon
+  + .checkbox-agreement__icon
   .checkbox-agreement__icon-unchecked {
   opacity: 0;
 }
