@@ -1,0 +1,40 @@
+.ourwork {
+    padding-top: 0;
+}
+
+.section-title--offset {
+    margin-bottom: 50px;
+}
+
+.ourwork__list {
+    display: flex;
+    gap: var(--indent);
+}
+
+.ourwork__item {
+    position: relative;
+}
+
+.ourwork__overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 370px;
+    height: 70px;
+
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.ourwork__text {
+    font-family: var(--main-font);
+    color: #ffffff;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 700;
+    text-transform: uppercase;
+}

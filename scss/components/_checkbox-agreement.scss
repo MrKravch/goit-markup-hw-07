@@ -1,0 +1,58 @@
+.checkbox-agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-agreement--position {
+    margin-bottom: 30px;
+}
+
+.checkbox-agreement__input:checked+.checkbox-agreement__icon .checkbox-agreement__icon-checked {
+    opacity: 1;
+}
+
+.checkbox-agreement__icon-unchecked {
+    transition: opacity var(--timing-function);
+}
+
+.checkbox-agreement__icon-checked {
+    opacity: 0;
+    transition: opacity var(--timing-function);
+}
+
+.checkbox-agreement__input:focus+.checkbox-agreement__icon {
+    fill: var(--accent-color);
+}
+
+.checkbox-agreement__input:checked+.registration-agreement-icon .checkbox-agreement__icon-unchecked {
+    opacity: 0;
+}
+
+.checkbox-agreement__icon {
+    margin-right: 7px;
+}
+
+.checkbox-agreement__text {
+    display: block;
+    text-align: left;
+
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+
+    user-select: none;
+    text-underline-position: under;
+
+    color: #757575;
+}
+
+.checkbox-agreement__link {
+    display: inline-block;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+
+    color: #2196f3;
+}
